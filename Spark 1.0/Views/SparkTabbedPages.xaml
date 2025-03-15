@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Spark.SparkTabbedPages"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:local="clr-namespace:Spark" 
+             xmlns:local1="clr-namespace:Spark.Views"
+             android:TabbedPage.ToolbarPlacement="Bottom"
+             UnselectedTabColor="Beige"
+             BackgroundColor="#1b1b1b"
+             BarBackgroundColor="#ffb300"
+             SelectedTabColor="#1b1b1b">
+
+    <local1:NotesPage Title="Notes" IconImageSource="outline_edit_calendar_black_48.png"/>
+    <local1:TasksPage Title="Tasks" IconImageSource="outline_add_circle_black_48.png"/>
+    <local1:TimerPage Title="Timer" IconImageSource="outline_timer_black_48.png" />
+</TabbedPage>

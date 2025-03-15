@@ -1,0 +1,146 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Programming\\C#\\Spark 1.0\\Spark 1.0\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E746C1DF-7E67-4AE7-9789-6DFAF3EBDF9E}|Spark 1.0\\Spark.csproj|e:\\programming\\c#\\spark 1.0\\spark 1.0\\spark 1.0\\views\\sparktabbedpages.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{E746C1DF-7E67-4AE7-9789-6DFAF3EBDF9E}|Spark 1.0\\Spark.csproj|solutionrelative:spark 1.0\\views\\sparktabbedpages.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E746C1DF-7E67-4AE7-9789-6DFAF3EBDF9E}|Spark 1.0\\Spark.csproj|e:\\programming\\c#\\spark 1.0\\spark 1.0\\spark 1.0\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E746C1DF-7E67-4AE7-9789-6DFAF3EBDF9E}|Spark 1.0\\Spark.csproj|solutionrelative:spark 1.0\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E746C1DF-7E67-4AE7-9789-6DFAF3EBDF9E}|Spark 1.0\\Spark.csproj|e:\\programming\\c#\\spark 1.0\\spark 1.0\\spark 1.0\\views\\taskspage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{E746C1DF-7E67-4AE7-9789-6DFAF3EBDF9E}|Spark 1.0\\Spark.csproj|solutionrelative:spark 1.0\\views\\taskspage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E746C1DF-7E67-4AE7-9789-6DFAF3EBDF9E}|Spark 1.0\\Spark.csproj|e:\\programming\\c#\\spark 1.0\\spark 1.0\\spark 1.0\\models\\newtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E746C1DF-7E67-4AE7-9789-6DFAF3EBDF9E}|Spark 1.0\\Spark.csproj|solutionrelative:spark 1.0\\models\\newtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E746C1DF-7E67-4AE7-9789-6DFAF3EBDF9E}|Spark 1.0\\Spark.csproj|e:\\programming\\c#\\spark 1.0\\spark 1.0\\spark 1.0\\services\\mystopwatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E746C1DF-7E67-4AE7-9789-6DFAF3EBDF9E}|Spark 1.0\\Spark.csproj|solutionrelative:spark 1.0\\services\\mystopwatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E746C1DF-7E67-4AE7-9789-6DFAF3EBDF9E}|Spark 1.0\\Spark.csproj|e:\\programming\\c#\\spark 1.0\\spark 1.0\\spark 1.0\\viewmodels\\taskspageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E746C1DF-7E67-4AE7-9789-6DFAF3EBDF9E}|Spark 1.0\\Spark.csproj|solutionrelative:spark 1.0\\viewmodels\\taskspageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TasksPageViewModel.cs",
+              "DocumentMoniker": "E:\\Programming\\C#\\Spark 1.0\\Spark 1.0\\Spark 1.0\\ViewModels\\TasksPageViewModel.cs",
+              "RelativeDocumentMoniker": "Spark 1.0\\ViewModels\\TasksPageViewModel.cs",
+              "ToolTip": "E:\\Programming\\C#\\Spark 1.0\\Spark 1.0\\Spark 1.0\\ViewModels\\TasksPageViewModel.cs",
+              "RelativeToolTip": "Spark 1.0\\ViewModels\\TasksPageViewModel.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAABkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T12:24:49.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SparkTabbedPages.xaml",
+              "DocumentMoniker": "E:\\Programming\\C#\\Spark 1.0\\Spark 1.0\\Spark 1.0\\Views\\SparkTabbedPages.xaml",
+              "RelativeDocumentMoniker": "Spark 1.0\\Views\\SparkTabbedPages.xaml",
+              "ToolTip": "E:\\Programming\\C#\\Spark 1.0\\Spark 1.0\\Spark 1.0\\Views\\SparkTabbedPages.xaml",
+              "RelativeToolTip": "Spark 1.0\\Views\\SparkTabbedPages.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-14T12:24:49.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "E:\\Programming\\C#\\Spark 1.0\\Spark 1.0\\Spark 1.0\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Spark 1.0\\App.xaml.cs",
+              "ToolTip": "E:\\Programming\\C#\\Spark 1.0\\Spark 1.0\\Spark 1.0\\App.xaml.cs",
+              "RelativeToolTip": "Spark 1.0\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T12:24:49.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MyStopwatch.cs",
+              "DocumentMoniker": "E:\\Programming\\C#\\Spark 1.0\\Spark 1.0\\Spark 1.0\\Services\\MyStopwatch.cs",
+              "RelativeDocumentMoniker": "Spark 1.0\\Services\\MyStopwatch.cs",
+              "ToolTip": "E:\\Programming\\C#\\Spark 1.0\\Spark 1.0\\Spark 1.0\\Services\\MyStopwatch.cs",
+              "RelativeToolTip": "Spark 1.0\\Services\\MyStopwatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T12:24:49.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NewTask.cs",
+              "DocumentMoniker": "E:\\Programming\\C#\\Spark 1.0\\Spark 1.0\\Spark 1.0\\Models\\NewTask.cs",
+              "RelativeDocumentMoniker": "Spark 1.0\\Models\\NewTask.cs",
+              "ToolTip": "E:\\Programming\\C#\\Spark 1.0\\Spark 1.0\\Spark 1.0\\Models\\NewTask.cs",
+              "RelativeToolTip": "Spark 1.0\\Models\\NewTask.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T12:24:49.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TasksPage.xaml",
+              "DocumentMoniker": "E:\\Programming\\C#\\Spark 1.0\\Spark 1.0\\Spark 1.0\\Views\\TasksPage.xaml",
+              "RelativeDocumentMoniker": "Spark 1.0\\Views\\TasksPage.xaml",
+              "ToolTip": "E:\\Programming\\C#\\Spark 1.0\\Spark 1.0\\Spark 1.0\\Views\\TasksPage.xaml",
+              "RelativeToolTip": "Spark 1.0\\Views\\TasksPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL0BAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-14T12:24:49.349Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

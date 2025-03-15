@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Spark.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PrimaryYellow">#ffb300</Color>
+            <Color x:Key="PrimaryDark">#1b1b1b</Color>
+            <Color x:Key="PrimaryLight">beige</Color>
+            <Color x:Key="WhiteForText">WhiteSmoke</Color>
+            <Color x:Key="WhiteColor">white</Color>
+            <Color x:Key="BlackColor">Black</Color>
+            <Color x:Key="PlaceHolderLightGrey">#9e9e9e</Color>
+            <Color x:Key="GreyColor">#757575</Color>
+            <Color x:Key="GreyColorDark">#424242</Color>
+            
+            <Color x:Key="NoteColorBeige">beige</Color>
+            <Color x:Key="NoteColorOrange">#ffa000</Color>
+            <Color x:Key="NoteColorYellow">#fdd835</Color>
+            <Color x:Key="NoteColorLightGreen">#d4e157</Color>
+            <Color x:Key="NoteColorGreen">#558b2f</Color>
+            <Color x:Key="NoteColorLigthBlue">#4dd0e1</Color>
+            <Color x:Key="NoteColorGrey">#9e9e9e</Color>
+            <Color x:Key="NoteColorPurple">#8e24aa</Color>
+
+            <Color x:Key="CoolDark">#212121</Color>
+            <Color x:Key="CoolPink">#e91e63</Color> 
+            <Color x:Key="CoolBlue">#009688</Color>
+            <Color x:Key="CoolRed">#b71c1c</Color>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

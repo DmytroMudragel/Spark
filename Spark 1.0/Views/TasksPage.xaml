@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:Spark.ViewModels"
+             xmlns:CakeView="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             Shell.NavBarIsVisible="False"
+             x:Class="Spark.Views.TasksPage">
+    <ContentPage.BindingContext>
+        <viewmodels:TasksPageViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <Style TargetType="Grid">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="Transparent" />
+                                <Setter Property="Opacity"
+                                        Value="0.9"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+                <!--Scroll view-->
+                <ScrollView BackgroundColor="{StaticResource PrimaryDark}"
+                            Grid.Row="0" Grid.Column="0" Margin="0,0,0,0"
+                            VerticalScrollBarVisibility="Never">
+                    <Grid Padding="0" Margin="0,0,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.85*"/>
+                            <ColumnDefinition Width="0.15*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1440"/>
+                        </Grid.RowDefinitions>
+
+                        <!--Background lines-->
+                        <StackLayout Opacity="0.2" Spacing="18.7">
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  0:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  1:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  2:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  3:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  4:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  5:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="6">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  6:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="7">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  7:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  8:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="9">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  9:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  10:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="11">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  11:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="12">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  12:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="13">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  13:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="14">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  14:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="15">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  15:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="16">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  16:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="17">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  17:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="18">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  18:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="19">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  19:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  20:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="21">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  21:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="22">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  22:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                            <Grid Grid.Row="23">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.15*"/>
+                                    <ColumnDefinition Width="0.85*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="{Binding HourCellHeaderHeight}"/>
+                                    <RowDefinition Height="{Binding HourCellHeight}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0"  Text="  23:00  " TextColor="{StaticResource WhiteForText}"/>
+                                <Rectangle Grid.Column="1" BackgroundColor="{StaticResource WhiteForText}" VerticalOptions="CenterAndExpand" />
+                                <!--<Frame Margin="12,0,0,0" VerticalOptions="FillAndExpand" 
+                                       BackgroundColor="Transparent" Grid.Column="0" 
+                                       Grid.Row="1" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                        </StackLayout>
+
+
+                        <!--Time progress bar-->
+                        <CakeView:PancakeView Grid.Column="1" Grid.Row="0" HeightRequest="{Binding TimeProgressBarValue}" VerticalOptions="Start" 
+                                          CornerRadius="0,0,12,12" BackgroundColor="{StaticResource PrimaryYellow}" >
+                            <Label Text="{Binding CurrentTime, Mode=TwoWay}" TextColor="{StaticResource PrimaryDark}" 
+                                 HorizontalOptions="Center" VerticalOptions="End" FontSize="10" Margin="0,0,0,3"/>
+                        </CakeView:PancakeView>
+
+
+                        <!--Time blocks collection-->
+                        <CollectionView BackgroundColor="Transparent" HeightRequest="{Binding TimeProgressBarValue}" VerticalOptions="Start"
+                                    ItemsSource= "{Binding Tasks}" Margin="50,0,0,0"
+                                    ItemSizingStrategy="MeasureAllItems"
+                                    SelectionMode="Single" SelectedItem="{Binding SelectedTask ,Mode=TwoWay}">
+                            <!--<CollectionView.EmptyView >
+                                <StackLayout Padding="5">
+                                    <Label HorizontalOptions="Center" Margin="0,10,0,0" FontSize="16" TextColor="{StaticResource WhiteColor}" Text="Do something"/>
+                                </StackLayout>
+                            </CollectionView.EmptyView>-->
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Padding="0,0,0,-1" HeightRequest="{Binding TaskHeight}">
+                                        <Frame CornerRadius="12" BackgroundColor="{StaticResource PrimaryDark}" Padding="1" Margin="0,0,0,0" >
+                                            <Frame CornerRadius="7" OutlineColor ="Transparent"  BackgroundColor="{Binding TaskColor}" Padding="12" Margin="0,0,0,0" >
+                                                <StackLayout>
+                                                    <Grid VerticalOptions="FillAndExpand" Margin="0,0,0,-5">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="50"/>
+                                                            <ColumnDefinition Width="45"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="*"/>
+                                                            <RowDefinition Height="15"/>
+                                                        </Grid.RowDefinitions>
+
+                                                        <Label Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="End" 
+                                                           VerticalTextAlignment="End" FontSize="12"  Margin="14,0,-3,0" IsVisible="{Binding IsCanWriteText}"
+                                                           Text="{Binding TaskTypeLable}" FontAttributes="Bold" TextColor="{StaticResource PrimaryDark}"/>
+
+                                                        <Label Text="{Binding TaskText}" TextColor="{Binding TaskTextColor}" 
+                                                           Grid.Row="0" Grid.Column="0" FontSize="16" Margin="0,-10,0,0" MaxLines="{Binding MaxLinesVisible}"
+                                                           Grid.ColumnSpan="3" IsVisible="{Binding IsCanWriteText}"/> 
+
+                                                        <Label Grid.Column="2" Grid.Row="1" 
+                                                            FontSize="12" Margin="0,0,-5,0" IsVisible="{Binding IsCanWriteText}"
+                                                            HorizontalTextAlignment="Center" VerticalTextAlignment="End" 
+                                                            Text="{Binding TaskDuration,StringFormat='{0:g}'}" FontAttributes="Bold" 
+                                                            TextColor="{StaticResource PrimaryDark}"/>
+                                                    </Grid>
+                                                </StackLayout>
+                                            </Frame>
+                                        </Frame>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                            <CollectionView.Footer>
+                                <Grid Padding="1,0,1,0" BackgroundColor="Transparent" HeightRequest="{Binding DefaultFrameHeight}">
+                                    <!--<Frame CornerRadius="12" HeightRequest="{Binding DefaultFrameHeight}" Padding="0,0,0,0"
+                                            BackgroundColor="{StaticResource GreyColorDark}" VerticalOptions="FillAndExpand">
+                                        <StackLayout Background="red">-->
+                                    <Button BackgroundColor="{StaticResource GreyColorDark}" ImageSource="{Binding PlusButtonImage}"  
+                                                HorizontalOptions="FillAndExpand" CornerRadius="7"
+                                                Command="{Binding AddNewTaskCommand}"/>
+                                        <!--</StackLayout>
+                                    </Frame>-->
+                                </Grid>
+                            </CollectionView.Footer>
+                        </CollectionView>
+
+                    </Grid>
+                </ScrollView>
+
+
+                <!--NoteEditorFrame-->
+                <Grid IsVisible="{Binding IsTaskEditorPageIsActive}" Grid.Column="0" Grid.Row="0">
+                    <StackLayout BackgroundColor="{StaticResource BlackColor}" Opacity="0.8"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.05*"/>
+                            <ColumnDefinition Width="0.9*"/>
+                            <ColumnDefinition Width="0.05*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.2*"/>
+                            <RowDefinition Height="0.6*"/>
+                            <RowDefinition Height="0.2*"/>
+                        </Grid.RowDefinitions>
+                        <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3" 
+                            BackgroundColor="Transparent" Command="{Binding BackFromTaskEditorCommand}"/>
+                        <Frame CornerRadius="20" Grid.Column="1" Grid.Row="1" BackgroundColor="{Binding TaskChosenColor}">
+                            <StackLayout BackgroundColor="Transparent" >
+                                <Grid VerticalOptions="FillAndExpand" Margin="0,0,0,-5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.7*" />
+                                        <ColumnDefinition Width="25" />
+                                        <ColumnDefinition Width="65" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="25"/>
+                                        <RowDefinition Height="0.8*"/>
+                                        <RowDefinition Height="29"/>
+                                        <RowDefinition Height="29"/>
+                                    </Grid.RowDefinitions>
+
+                                    <ImageButton  Grid.Column="0" Grid.Row="0" HorizontalOptions="Start" BackgroundColor="Transparent"
+                                          Source="outline_arrow_back_black_48dp.png" Command="{Binding BackFromTaskEditorCommand}"
+                                          HeightRequest="30" WidthRequest="30" BorderWidth="20" Grid.ColumnSpan="2"/>
+
+                                    <Button Text="Save" TextColor="{StaticResource WhiteColor}" BorderRadius="50"
+                                    BackgroundColor="{StaticResource PrimaryDark}"  WidthRequest="65" 
+                                    Grid.Column="2" Grid.Row="0"  HorizontalOptions="End" Padding="-5"
+                                    FontSize="14" Margin="-3" Command="{Binding SaveTaskCommand}"/>
+
+                                    <!--<Button ImageSource="outline_delete_white_24dp.png" 
+                                    BorderRadius ="50" BorderWidth="1" WidthRequest="30" HeightRequest="30"
+                                    BackgroundColor="{StaticResource PrimaryDark}"  
+                                    Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" Padding="0"
+                                    Margin="-3" Command="{Binding DeleteTaskCommand}"/>-->
+
+                                    <Editor Placeholder="You did ..." PlaceholderColor="{StaticResource PlaceHolderLightGrey}" Grid.ColumnSpan="3" TextColor="{StaticResource PrimaryDark}"
+                                        Grid.Column="0" Grid.Row="1" Text="{Binding TaskEditorEditorText}" AutoSize="Disabled">
+                                    </Editor>
+                                        <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"
+                                         Spacing="10" HorizontalOptions="CenterAndExpand" Margin="-12,0,-12,0">
+                                        <Button BorderRadius ="50" Text="{Binding TaskTypeLblForFree}" Font="14" TextColor="{StaticResource PrimaryDark}" BorderWidth="1" WidthRequest="65" HeightRequest="29" 
+                                        BorderColor="{StaticResource PrimaryDark}" Padding="-5" FontAttributes="Bold"
+                                        BackgroundColor="{Binding Color1T}" Command="{Binding Set1ColorCommandT}"/>
+                                        <Button BorderRadius ="50" Text="{Binding TaskTypeLblForEat}" Font="14" TextColor="{StaticResource PrimaryDark}" BorderWidth="1" WidthRequest="65" HeightRequest="29"
+                                        BorderColor="{StaticResource PrimaryDark}" Padding="-5" FontAttributes="Bold" 
+                                        BackgroundColor="{Binding Color4T}" Command="{Binding Set4ColorCommandT}"/>
+                                        <Button BorderRadius ="50" Text="{Binding TaskTypeLblForSleep}" Font="14" TextColor="{StaticResource PrimaryDark}" BorderWidth="1" WidthRequest="65" HeightRequest="29" 
+                                        BorderColor="{StaticResource PrimaryDark}" Padding="-5" FontAttributes="Bold" 
+                                        BackgroundColor="{Binding Color6T}" Command="{Binding Set6ColorCommandT}"/>
+                                        <Button BorderRadius ="50" Text="{Binding TaskTypeLblForTrain}" Font="14" TextColor="{StaticResource PrimaryDark}" BorderWidth="1" WidthRequest="65" HeightRequest="29" 
+                                        BorderColor="{StaticResource PrimaryDark}" Padding="-5" FontAttributes="Bold" 
+                                        BackgroundColor="{Binding Color3T}" Command="{Binding Set3ColorCommandT}"/>
+                                    </StackLayout>
+
+                                    <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"
+                                         Spacing="10" HorizontalOptions="CenterAndExpand" Margin="-12,0,-12,0" >
+                                        <Button BorderRadius ="50" Text="{Binding TaskTypeLblForWork}" Font="14" TextColor="{StaticResource PrimaryDark}" BorderWidth="1" WidthRequest="65" HeightRequest="29" 
+                                        BorderColor="{StaticResource PrimaryDark}" Padding="-5" FontAttributes="Bold"
+                                        BackgroundColor="{Binding Color8T}" Command="{Binding Set8ColorCommandT}"/>
+                                        <Button BorderRadius ="50" Text="{Binding TaskTypeLblForMinor}" Font="14" TextColor="{StaticResource PrimaryDark}" BorderWidth="1" WidthRequest="65" HeightRequest="29"
+                                        BorderColor="{StaticResource PrimaryDark}" Padding="-5" FontAttributes="Bold" 
+                                        BackgroundColor="{Binding Color2T}" Command="{Binding Set2ColorCommandT}"/>
+                                        <Button BorderRadius ="50" Text="{Binding TaskTypeLblForStudy}" Font="14" TextColor="{StaticResource PrimaryDark}" BorderWidth="1" WidthRequest="65" HeightRequest="29" 
+                                        BorderColor="{StaticResource PrimaryDark}" Padding="-5" FontAttributes="Bold" 
+                                        BackgroundColor="{Binding Color5T}" Command="{Binding Set5ColorCommandT}"/>
+                                        <Button BorderRadius ="50" Text="{Binding TaskTypeLblForFun}" Font="14" TextColor="{StaticResource PrimaryDark}" BorderWidth="1" WidthRequest="65" HeightRequest="29" 
+                                        BorderColor="{StaticResource PrimaryDark}" Padding="-5" FontAttributes="Bold" 
+                                        BackgroundColor="{Binding Color7T}" Command="{Binding Set7ColorCommandT}"/>
+                                    </StackLayout>
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </Grid>
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:Spark.ViewModels"
+             xmlns:CakeView="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             Shell.NavBarIsVisible="False"
+             x:Class="Spark.Views.TimerPage">
+    <ContentPage.BindingContext>
+        <viewmodels:TimerViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <ScrollView>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.12*"/>
+                    <ColumnDefinition Width="0.76*"/>
+                    <ColumnDefinition Width="0.12*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="0.4*"/>
+                    <RowDefinition Height="0.12*"/>
+                    <RowDefinition Height="0.8*"/>
+                </Grid.RowDefinitions>
+
+                <!--Timer panel-->
+                <Frame BackgroundColor="{StaticResource PrimaryYellow}" Grid.Column="1" Grid.Row="1" CornerRadius="50" >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.8*"/>
+                            <RowDefinition Height="0.2*"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="outline_watch_later_black_480.png" Opacity="0.07" Margin="-120" VerticalOptions="Center"/>
+                        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.2*"/>
+                                <RowDefinition Height="0.5*"/>
+                                <RowDefinition Height="0.5*"/>
+                            </Grid.RowDefinitions>
+                            <Label Text="Previous" FontSize="25" TextColor="#1b1b1b" Grid.Row="0"  
+                               VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label x:Name="previousTimerLable" Text="{Binding PreviousTimeOnTimer}" FontSize="35" 
+                               TextColor="{StaticResource PrimaryDark}" Grid.Row="1" VerticalOptions="Center" 
+                               HorizontalOptions="Center"/>
+                            <Label x:Name="currentTimerLable" Text="{Binding CurrentTimeOnTimer}" FontSize="35" 
+                               TextColor="{StaticResource PrimaryDark}" Grid.Row="2" VerticalOptions="Start" 
+                               HorizontalOptions="Center"/>
+                        </Grid>
+                        <Button  Command="{Binding GoPauseBtnClick}"  BackgroundColor="{Binding GoPauseBtnColor}" 
+                             TextColor="{Binding GoPauseBtnTextColor}" CornerRadius="50" 
+                            Text="{Binding GoPauseBtnText}" Grid.Row="1" Grid.Column="1"/>
+                        <Button BackgroundColor="{Binding RestartBtnColor}" TextColor="{Binding RestartBtnTextColor}" 
+                            CornerRadius="50" Command="{Binding RestartBtnClick}"
+                            Text="Restart" Grid.Row="1" Grid.Column="0"/>
+                    </Grid>
+                </Frame>
+
+                <!--History-->
+                <CakeView:PancakeView BackgroundColor="{StaticResource PrimaryLight}" CornerRadius="50,50,0,0" 
+                                  IsClippedToBounds="true" HorizontalOptions="FillAndExpand" 
+                                  Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" >
+                    <StackLayout>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.5*"/>
+                                <ColumnDefinition Width="0.4*"/>
+                                <ColumnDefinition Width="0.14*"/>
+                                <ColumnDefinition Width="0.5*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+
+                            <Label Text="History" TextColor="{StaticResource PrimaryDark}" FontSize="25" HorizontalOptions="Center" 
+                               Grid.Column="1" Grid.Row="0"/>
+                            <Image Source="outline_browse_gallery_black_48.png" Grid.Column="2" Grid.Row="0"
+                               HorizontalOptions="End"/>
+
+                            <StackLayout Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="1">
+                                <Frame CornerRadius="50" Margin="12" Padding="10" BackgroundColor="{StaticResource WhiteColor}">
+                                    <Label Text="{Binding HistoryLable1}" TextColor="{StaticResource PrimaryDark}" FontSize="25" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame CornerRadius="50" Margin="12" Padding="10" BackgroundColor="{StaticResource WhiteColor}">
+                                    <Label Text="{Binding HistoryLable2}" TextColor="{StaticResource PrimaryDark}" FontSize="25" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame CornerRadius="50" Margin="12" Padding="10" BackgroundColor="{StaticResource WhiteColor}">
+                                    <Label Text="{Binding HistoryLable3}" TextColor="{StaticResource PrimaryDark}" FontSize="25" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame CornerRadius="50" Margin="12" Padding="10" BackgroundColor="{StaticResource WhiteColor}">
+                                    <Label Text="{Binding HistoryLable4}" TextColor="{StaticResource PrimaryDark}" FontSize="25" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame CornerRadius="50" Margin="12" Padding="10" BackgroundColor="{StaticResource WhiteColor}">
+                                    <Label Text="{Binding HistoryLable5}" TextColor="{StaticResource PrimaryDark}" FontSize="25" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame CornerRadius="50" Margin="12" Padding="10" BackgroundColor="{StaticResource WhiteColor}">
+                                    <Label Text="{Binding HistoryLable6}" TextColor="{StaticResource PrimaryDark}" FontSize="25" HorizontalOptions="Center"/>
+                                </Frame>
+                                <Frame CornerRadius="50" Margin="12" Padding="10" BackgroundColor="{StaticResource WhiteColor}">
+                                    <Label Text="{Binding HistoryLable7}" TextColor="{StaticResource PrimaryDark}" FontSize="25" HorizontalOptions="Center"/>
+                                </Frame>
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+
+                </CakeView:PancakeView>
+
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

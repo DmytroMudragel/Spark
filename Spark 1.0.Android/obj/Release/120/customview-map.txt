@@ -1,0 +1,56 @@
+@string/appbar_scrolling_view_behavior;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\rootlayout.xml
+adaptive-icon;obj\Release\120\res\mipmap-anydpi-v26\icon.xml
+adaptive-icon;obj\Release\120\res\mipmap-anydpi-v26\icon_round.xml
+alpha;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\anim\enterfromleft.xml
+alpha;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\anim\exittoleft.xml
+androidx.appcompat.widget.Toolbar;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\fallbacktoolbardonotuse.xml
+androidx.appcompat.widget.Toolbar;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\rootlayout.xml
+androidx.appcompat.widget.Toolbar;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\shellcontent.xml
+androidx.appcompat.widget.Toolbar;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\toolbar.xml
+androidx.coordinatorlayout.widget.CoordinatorLayout;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\rootlayout.xml
+androidx.coordinatorlayout.widget.CoordinatorLayout;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\shellcontent.xml
+attr;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\values\attrs.xml
+background;obj\Release\120\res\mipmap-anydpi-v26\icon.xml
+background;obj\Release\120\res\mipmap-anydpi-v26\icon_round.xml
+cache-path;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\55\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+color;obj\Release\120\res\values\colors.xml
+com.google.android.material.appbar.AppBarLayout;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\flyoutcontent.xml
+com.google.android.material.appbar.AppBarLayout;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\rootlayout.xml
+com.google.android.material.appbar.AppBarLayout;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\shellcontent.xml
+com.google.android.material.bottomnavigation.BottomNavigationView;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\bottomtablayout.xml
+com.google.android.material.tabs.TabLayout;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\fallbacktabbardonotuse.xml
+com.google.android.material.tabs.TabLayout;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\rootlayout.xml
+com.google.android.material.tabs.TabLayout;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\tabbar.xml
+declare-styleable;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\values\attrs.xml
+external-cache-path;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\55\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\55\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj\Release\120\res\mipmap-anydpi-v26\icon.xml
+foreground;obj\Release\120\res\mipmap-anydpi-v26\icon_round.xml
+FrameLayout;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\54\jl\res\layout\camerafragment.xml
+FrameLayout;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\bottomtablayout.xml
+item;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\values\styles.xml
+item;obj\Release\120\res\values\styles.xml
+LinearLayout;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\bottomtablayout.xml
+paths;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\55\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+resources;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\values\attrs.xml
+resources;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\values\strings.xml
+resources;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\values\styles.xml
+resources;obj\Release\120\res\values\colors.xml
+resources;obj\Release\120\res\values\styles.xml
+set;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\anim\enterfromleft.xml
+set;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\anim\enterfromright.xml
+set;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\anim\exittoleft.xml
+set;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\anim\exittoright.xml
+shape;obj\Release\120\res\drawable\my_cursor.xml
+size;obj\Release\120\res\drawable\my_cursor.xml
+solid;obj\Release\120\res\drawable\my_cursor.xml
+string;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\values\strings.xml
+style;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\values\styles.xml
+style;obj\Release\120\res\values\styles.xml
+translate;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\anim\enterfromleft.xml
+translate;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\anim\enterfromright.xml
+translate;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\anim\exittoleft.xml
+translate;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\anim\exittoright.xml
+xamarin.communitytoolkit.ui.views.AutoFitTextureView;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\54\jl\res\layout\camerafragment.xml
+xamarin.forms.platform.android.appcompat.FormsViewPager;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\rootlayout.xml
+xamarin.forms.platform.android.ShellFlyoutLayout;E:\C#\Spark 1.0\Spark 1.0\Spark 1.0.Android\obj\Release\120\lp\57\jl\res\layout\flyoutcontent.xml

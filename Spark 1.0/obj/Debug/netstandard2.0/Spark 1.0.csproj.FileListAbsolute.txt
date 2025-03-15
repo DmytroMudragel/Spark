@@ -1,0 +1,15 @@
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\bin\Debug\netstandard2.0\Spark 1.0.deps.json
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\bin\Debug\netstandard2.0\Spark 1.0.dll
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\bin\Debug\netstandard2.0\Spark 1.0.pdb
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\obj\Debug\netstandard2.0\Spark 1.0.csproj.AssemblyReference.cache
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\obj\Debug\netstandard2.0\Spark 1.0.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\obj\Debug\netstandard2.0\Spark 1.0.AssemblyInfoInputs.cache
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\obj\Debug\netstandard2.0\Spark 1.0.AssemblyInfo.cs
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\obj\Debug\netstandard2.0\Spark 1.0.csproj.CoreCompileInputs.cache
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\obj\Debug\netstandard2.0\XamlC.stamp
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\obj\Debug\netstandard2.0\Spark 1.0.dll
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\obj\Debug\netstandard2.0\refint\Spark 1.0.dll
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\obj\Debug\netstandard2.0\Spark 1.0.pdb
+E:\C#\Spark 1.0\Spark 1.0\Spark 1.0\obj\Debug\netstandard2.0\ref\Spark 1.0.dll

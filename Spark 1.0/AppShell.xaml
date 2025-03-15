@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:Spark.Views" 
+       Title="Spark"
+       x:Class="Spark.AppShell">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource PrimaryDark}" />
+                <!--<Setter Property="Shell.ForegroundColor" Value="White" />-->
+                <!--<Setter Property="Shell.TitleColor" Value="White" />-->
+                <!--<Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />-->
+                <Setter Property="Shell.UnselectedColor" Value="{StaticResource PrimaryLight}" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource PrimaryYellow}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource WhiteColor}"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource PrimaryLight}"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="#1b1b1b"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+    <!--android:TabbedPage.ToolbarPlacement="Bottom"
+             UnselectedTabColor="Beige"
+             BackgroundColor="#1b1b1b"
+             BarBackgroundColor="#ffb300"
+             SelectedTabColor="#1b1b1b">-->
+   
+    <TabBar>
+        <Tab Title="Notes" Icon="outline_edit_calendar_black_48.png">
+            <ShellContent  ContentTemplate="{DataTemplate views:NotesPage}">
+            </ShellContent>
+        </Tab>
+        <Tab Title="Tasks" Icon="outline_add_circle_black_48.png" >
+            <ShellContent ContentTemplate="{DataTemplate views:TasksPage}">
+            </ShellContent>
+        </Tab>
+        <Tab Title="Timer" Icon="outline_timer_black_48.png" >
+            <ShellContent ContentTemplate="{DataTemplate views:TimerPage}">
+            </ShellContent>
+        </Tab>
+    </TabBar>
+    <ShellSection Title="Tasks">
+        <ShellContent ContentTemplate="{DataTemplate views:TasksPage}"/>
+    </ShellSection >
+</Shell>
