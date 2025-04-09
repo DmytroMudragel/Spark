@@ -4,16 +4,20 @@ Spark is a personal productivity application that introduces a unique perspectiv
 
 Spark is a cross-platform app developed for Android and iOS using **.NET C# and XAML** in **Xamarin .NET MAUI**. It utilizes **Google Material Design 3** for a modern visual appearance and **SQLite** for local data storage on the user’s device. The app has been fully tested and is currently operational on the Android system; several features may need some further improvements.
 
-## Making notes 
-![Project Logo](Figuration/1.png)
+**Tag a time block that’s passed**
 
+**Making notes** 
 
-## Timer  
+<img src="https://github.com/DmytroMudragel/Spark/blob/main/Figuration/1.png"  width="350">
 
-<p align="center">
-  <img src="https://github.com/DmytroMudragel/Spark/blob/main/Figuration/2.png" alt="Image 1" width="200" style="display:inline-block; margin-right:10px;">
-  <img src="https://github.com/DmytroMudragel/Spark/blob/main/Figuration/3.png" alt="Image 2" width="200" style="display:inline-block;">
+**Timer**  
+
+<p align="right">
+  <img src="https://github.com/DmytroMudragel/Spark/blob/main/Figuration/2.png" alt="Image 1" width="350" style="display:inline-block; margin-right:20px;">
+  <img src="https://github.com/DmytroMudragel/Spark/blob/main/Figuration/3.png" alt="Image 2" width="350" style="display:inline-block;">
 </p>
+
+**Tag a time block that’s passed**
 
 | Image 1 | Image 2 |
 |--------|--------|
