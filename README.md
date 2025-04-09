@@ -4,13 +4,13 @@ Spark is a personal productivity application that introduces a fresh perspective
 
 Spark is a cross-platform app developed for Android and iOS using .NET C# and XAML in Xamarin .NET MAUI. It utilizes Google Material Design 3 for a modern visual appearance and SQLite for local data storage on the user’s device. The app has been fully tested and is currently operational on the Android system; several features may need some further improvements.
 
-![Project Logo](assets/logo.png)
+![Project Logo](Figuration/1.png)
 
 
 Making notes 1 
 
-![Timer features](assets/2.png) 
-![Timer history](assets/3.png) 
+![Timer features](Figuration/2.png) 
+![Timer history](Figuration/3.png) 
 
 
 ## Features
