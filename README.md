@@ -2,7 +2,7 @@
 
 Spark is a personal productivity application that introduces a unique perspective on time management, complemented by integrated note-taking and timer tools. The app’s timeline view is centered around the concept that time moves forward nonstop, and it’s up to you how wisely you choose to use it.
 
-The app is a cross-platform app developed for Android and iOS using **.NET C# and XAML** in **Xamarin .NET MAUI** employing the **MVVM** concept. It utilizes **Google Material Design 3** for a modern visual appearance and **SQLite** for local data storage on the user’s device. Spark has been fully tested and is currently operational on the Android system; several features may need some further improvements.
+The app was developed as a cross-platform solution for Android and iOS using **.NET C# and XAML** in **Xamarin .NET MAUI**, employing the **MVVM** concept. It utilizes **Google Material Design 3** for a modern visual appearance and **SQLite** for local data storage on the user’s device. Spark has been fully tested and is currently operational on the Android system; several features may need some further improvements.
 
 ## Features:
 
