@@ -6,18 +6,18 @@ Spark is a cross-platform app developed for Android and iOS using **.NET C# and 
 
 ## Features:
 
-- **See what you've done up until now.**
+- **See what you've done today up until now.**
 
 <img src="https://github.com/DmytroMudragel/Spark/blob/main/Figuration/4.png"  width="250">
 
-- **Tag a time block that’s passed.**
+- **Tag a time block that’s passed with easy color differentiation for clearness.**
 
 <p align="left">
   <img src="https://github.com/DmytroMudragel/Spark/blob/main/Figuration/5.png" alt="Image 2" width="250" style="display:inline-block; margin-right:20px;">
   <img src="https://github.com/DmytroMudragel/Spark/blob/main/Figuration/6.png" alt="Image 3" width="250" style="display:inline-block;">
 </p>
 
-- **Make notes.** 
+- **Make notes and choose note color.** 
 
 <img src="https://github.com/DmytroMudragel/Spark/blob/main/Figuration/1.png"  width="250">
 
