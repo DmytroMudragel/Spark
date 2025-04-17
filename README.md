@@ -10,7 +10,7 @@ The app was developed as a cross-platform solution for Android and iOS using **.
 
 <img src="https://github.com/DmytroMudragel/Spark/blob/main/Figuration/4.png"  width="250">
 
-- **Tag a time block that’s passed with easy color differentiation for clearness.**
+- **Tag a time block that’s passed with easy color differentiation for clarity.**
 
 <p align="left">
   <img src="https://github.com/DmytroMudragel/Spark/blob/main/Figuration/5.png" alt="Image 2" width="250" style="display:inline-block; margin-right:20px;">
